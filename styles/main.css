@@ -1,0 +1,194 @@
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Padding and border are subtracted from the content size instead of added outside.*/
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f1e6e6;
+  color: #161515;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* Ensures the body spans the full viewport height */
+  display: flex;
+  flex-direction: column; /* Makes the body a flex container */
+  overflow-x: hidden;
+}
+.main-container {
+  flex: 1; /* Pushes the footer to the bottom if content is short */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  background-color: #f1e6e6;
+  background-image: url(/assets/jour.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #9db2c0;
+  color: #fff;
+  padding: 10px 20px;
+}
+.blog-title {
+  background-color: rgb(140 137 137 / 26%);
+}
+.footer {
+  position: fixed; /* Makes the footer fixed in place */
+  bottom: 0; /* Positions it at the bottom of the viewport */
+  left: 0; /* Ensures it spans from the left */
+  width: 100%; /* Spans the full width of the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(140 137 137 / 26%);
+  color: #877d7d; /* Text color for better readability */
+  padding: 10px 0; /* Optional: Padding for better spacing */
+  z-index: 1000; /* Keeps it above other elements */
+}
+
+/* Optional: Footer Text Styling */
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+.content-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 9px;
+  margin: 9px;
+}
+.blog-menu {
+  padding: 15px;
+  margin: 30px auto;
+  width: 40%;
+}
+
+.blog-name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.blog-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.15);
+  color: #464242;
+  font-size: 1.5em;
+  text-align: center;
+}
+.header-right {
+  float: right;
+}
+.header-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.header-right a:hover {
+  background-color: #b4b0b0;
+  color: black;
+}
+
+.main-head-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.blog-detail {
+  width: 60%;
+}
+/* Blog Content */
+.blog-content {
+  flex: 1; /* Pushes the footer to the bottom */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 9px;
+  margin: 9px;
+}
+.blog-detail {
+  width: 60%;
+  text-align: left;
+}
+.blog-info {
+  padding: 6%;
+}
+.content-main-htmlcss p {
+  margin-bottom: 1em;
+}
+.htmlcss-prop {
+  font-size: 20px;
+  padding: 9px;
+}
+.content-main-htmlcss {
+  padding: 20px;
+}
+.tech-one {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.tech-skill,
+.hum-skill {
+  list-style: none; /* Removes the bullet */
+  margin: 0; /* Optional: reset default margins */
+  padding: 0; /* Optional: reset default padding */
+}
+.tech-one:hover {
+  background-color: #b4b0b0;
+  color: black;
+}
+
+/* Responsive Design: Media Query */
+@media only screen and (max-width: 650px) {
+  .blog-content {
+    flex-direction: column; /* Stack the content vertically */
+  }
+  .blog-name {
+    flex-direction: column;
+  }
+
+  .blog-menu {
+    width: 100%; /* Adjust menu width */
+    margin-bottom: 10px; /* Add spacing below menu */
+  }
+
+  .header-right a {
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+  }
+  .content-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 9px;
+    margin: 9px;
+  }
+}
