@@ -30,12 +30,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #c7cecc;
   color: #fff;
   padding: 10px 20px;
+  background-color: rgb(140 137 137 / 26%);
 }
 .blog-title {
-  background-color: rgb(200 206 204);
+  background-color: rgb(140 137 137 / 26%);
 }
 .footer {
   position: fixed;
@@ -146,6 +146,14 @@ body {
   color: #464242;
   font-size: 1.5em;
   text-align: center;
+}
+.blog-data {
+  padding: 2%;
+  width: 100%;
+}
+.question-head {
+  font-size: large;
+  text-align: left;
 }
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
