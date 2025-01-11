@@ -26,14 +26,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.main-head-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  padding: 10px 20px;
-  background-color: rgb(140 137 137 / 26%);
-}
 .blog-title {
   background-color: rgb(140 137 137 / 26%);
 }
@@ -97,6 +89,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding: 10px;
 }
 .blog-content-detail {
   width: 100%;
@@ -163,12 +156,10 @@ body {
   .blog-name {
     flex-direction: column;
   }
-
-  .blog-menu {
-    /* width: 100%; 
-    margin-bottom: 10px;  */
+  .header-right {
+    display: flex;
+    flex-direction: column;
   }
-
   .header-right a {
     padding: 8px;
     font-size: 16px;
@@ -177,7 +168,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 9px;
-    margin: 9px;
+  }
+  .blog-content-detail {
+    flex-direction: column;
   }
 }
