@@ -1,11 +1,8 @@
-/* Reset margins and paddings */
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box; /*Padding and border are subtracted from the content size instead of added outside.*/
+  box-sizing: border-box;
 }
 
-/* Body styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -14,17 +11,17 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh; /* Ensures the body spans the full viewport height */
+  min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Makes the body a flex container */
+  flex-direction: column;
   overflow-x: hidden;
 }
 .main-container {
-  flex: 1; /* Pushes the footer to the bottom if content is short */
+  flex: 1;
   display: flex;
-  flex-direction: column; /* Align content vertically */
+  flex-direction: column;
   background-color: #f1e6e6;
-  background-image: url(/assets/jour.jpg);
+  background-image: url(/assets/growth-steady.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,43 +30,33 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #9db2c0;
+  background: #c7cecc;
   color: #fff;
   padding: 10px 20px;
 }
 .blog-title {
-  background-color: rgb(140 137 137 / 26%);
+  background-color: rgb(200 206 204);
 }
 .footer {
-  position: fixed; /* Makes the footer fixed in place */
-  bottom: 0; /* Positions it at the bottom of the viewport */
-  left: 0; /* Ensures it spans from the left */
-  width: 100%; /* Spans the full width of the page */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(140 137 137 / 26%);
-  color: #877d7d; /* Text color for better readability */
-  padding: 10px 0; /* Optional: Padding for better spacing */
-  z-index: 1000; /* Keeps it above other elements */
+  color: #877d7d;
+  padding: 10px 0;
+  z-index: 1000;
 }
-
-/* Optional: Footer Text Styling */
 .footer p {
   margin: 0;
   font-size: 16px;
 }
 .content-main {
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  padding: 9px;
-  margin: 9px;
-}
-.blog-menu {
-  padding: 15px;
-  margin: 30px auto;
-  width: 40%;
+  height: 100%;
 }
 
 .blog-name {
@@ -78,23 +65,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-}
-.blog-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35%;
-  height: 40%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 30%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.15);
-  color: #464242;
-  font-size: 1.5em;
-  text-align: center;
+  padding-left: 2%;
 }
 .header-right {
   float: right;
@@ -121,24 +92,20 @@ body {
   margin: 0;
   display: flex;
 }
-.blog-detail {
-  width: 60%;
-}
-/* Blog Content */
+
 .blog-content {
-  flex: 1; /* Pushes the footer to the bottom */
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 9px;
-  margin: 9px;
+}
+.blog-content-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 .blog-detail {
-  width: 60%;
-  text-align: left;
-}
-.blog-info {
-  padding: 6%;
+  padding: 19px;
 }
 .content-main-htmlcss p {
   margin-bottom: 1em;
@@ -151,38 +118,52 @@ body {
   padding: 20px;
 }
 .tech-one {
-  font-size: 18px;
-  color: black;
-  text-decoration: none;
+  font-size: 20px;
 }
-.tech-skill,
-.hum-skill {
-  list-style: none; /* Removes the bullet */
-  margin: 0; /* Optional: reset default margins */
-  padding: 0; /* Optional: reset default padding */
+.tech-list {
+  list-style-type: none;
 }
 .tech-one:hover {
   background-color: #b4b0b0;
   color: black;
+  width: 20%;
 }
-
+.tech-skill,
+.hum-skill {
+  list-style-type: disclosure-closed;
+}
+.blog-items {
+  width: 50%;
+  margin: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgb(228 234 154) 0px 8px 32px;
+  color: #464242;
+  font-size: 1.5em;
+  text-align: center;
+}
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
   .blog-content {
-    flex-direction: column; /* Stack the content vertically */
+    flex-direction: column;
   }
   .blog-name {
     flex-direction: column;
   }
 
   .blog-menu {
-    width: 100%; /* Adjust menu width */
-    margin-bottom: 10px; /* Add spacing below menu */
+    /* width: 100%; 
+    margin-bottom: 10px;  */
   }
 
   .header-right a {
-    padding: 8px; /* Adjust padding for smaller screens */
-    font-size: 16px; /* Adjust font size */
+    padding: 8px;
+    font-size: 16px;
   }
   .content-main {
     display: flex;
