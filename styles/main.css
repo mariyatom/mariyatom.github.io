@@ -104,8 +104,8 @@ body {
   margin-bottom: 1em;
 }
 .htmlcss-prop {
-  font-size: 20px;
-  padding: 9px;
+  font-size: 18px;
+  padding: 2px;
 }
 .content-main-htmlcss {
   padding: 20px;
@@ -147,6 +147,20 @@ body {
 .question-head {
   font-size: large;
   text-align: left;
+}
+.screenshot-id-class {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+}
+.image-idclass {
+  width: 80%;
+  max-width: 25%;
+  margin: 10px 0 0 10%;
+}
+.best-practise {
+  margin: 10px 0 0 10%;
 }
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
