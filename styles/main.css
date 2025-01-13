@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #e1e0e0;
-  background-image: url(/assets/growth-steady.jpg);
+  background-image: url(/assets/blog-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,12 +93,12 @@ body {
   width: 100%;
   padding: 10px;
 }
-.blog-content-detail {
+/* .blog-content-detail {
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 100%;
-}
+} */
 .blog-detail {
   padding: 19px;
 }
@@ -114,20 +114,21 @@ body {
 }
 .tech-one {
   font-size: 20px;
-}
-.tech-list {
-  list-style-type: none;
-}
-.tech-one:hover {
-  background-color: #b4b0b0;
   color: black;
-  width: 20%;
+  transition: width 0.3s ease; /* Smooth transition for width change */
 }
+
+.tech-one:hover {
+  color: rgb(0, 0, 0);
+}
+/* .tech-list {
+  list-style-type: none;
+} */
 .tech-skill,
 .hum-skill {
   list-style-type: disclosure-closed;
 }
-.blog-items {
+/* .blog-items {
   width: 50%;
   margin: 3% 16%;
   display: flex;
@@ -141,7 +142,7 @@ body {
   color: #464242;
   font-size: 1.5em;
   text-align: center;
-}
+} */
 .blog-data {
   padding: 2%;
   width: 100%;
@@ -163,6 +164,46 @@ body {
 .html-example {
   width: 80%;
 }
+.blog-items {
+  display: grid;
+  width: 57%;
+  margin: 2% 2% 2% 14%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgb(255 255 255 / 0%);
+  box-shadow: rgb(140 137 137 / 26%) -13px -12px 20px 0px;
+  color: #464242;
+  font-size: 1.5em;
+  text-align: center;
+}
+.blog-items .skill-base {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+.tech-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tech-list > * {
+  background-color: rgb(136 128 128 / 20%);
+  color: #fff;
+  padding: 0.2em 0.8em;
+  border-radius: 0.2em;
+  font-size: 80%;
+  margin: 5px;
+}
+.blog-content-detail {
+  display: grid;
+  gap: 10%;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
   .blog-content {
@@ -184,7 +225,11 @@ body {
     flex-direction: column;
     width: 100%;
   }
-  .blog-content-detail {
+  /* .blog-content-detail {
     flex-direction: column;
+  } */
+  .blog-content-detail {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
