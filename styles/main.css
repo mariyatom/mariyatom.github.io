@@ -6,7 +6,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f1e6e6;
+  background-color: #e1e0e0;
   color: #161515;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #f1e6e6;
+  background-color: #e1e0e0;
   background-image: url(/assets/growth-steady.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,6 +61,8 @@ body {
 }
 .header-right {
   float: right;
+  font-weight: 30px;
+  padding: 0 1%;
 }
 .header-right a {
   float: left;
@@ -68,7 +70,7 @@ body {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
   padding: 8px;
@@ -127,7 +129,7 @@ body {
 }
 .blog-items {
   width: 50%;
-  margin: 8%;
+  margin: 3% 16%;
   display: flex;
   justify-content: center;
   align-items: center;
