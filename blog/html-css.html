@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
     <title>html & css</title>
+    <style>
+      /* Style for the round "Go Up" button */
+      #goUpBtn {
+        display: none; /* Hidden by default */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        width: 50px; /* Circular button size */
+        height: 50px;
+        background-color: #7ca94d;
+        color: white;
+        border: none;
+        border-radius: 50%; /* Makes it round */
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px; /* Centers the arrow vertically */
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      #goUpBtn:hover {
+        background-color: #a7b300;
+      }
+    </style>
   </head>
 
   <body>
@@ -83,18 +109,46 @@
                 <img
                   src="/assets/id-class-eg.png"
                   alt="Example for id and class"
+                  class="html-example"
                 />
               </div>
               <div class="image-idclass">
                 <img
                   src="/assets/css-eg-id-class.png"
                   alt="Example css for id and class"
+                  class="html-example"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button id="goUpBtn" title="Go to top">↑</button>
     </div>
+
+    <script>
+      // Get the button
+      const goUpBtn = document.getElementById('goUpBtn')
+
+      // Show the button when scrolled down 100px from the top
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          goUpBtn.style.display = 'block'
+        } else {
+          goUpBtn.style.display = 'none'
+        }
+      }
+
+      // Scroll to the top when the button is clicked
+      goUpBtn.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
+      })
+    </script>
   </body>
 </html>

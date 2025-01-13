@@ -152,15 +152,14 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  height: 100vh;
 }
+
+.best-practise,
 .image-idclass {
-  width: 80%;
-  max-width: 25%;
   margin: 10px 0 0 10%;
 }
-.best-practise {
-  margin: 10px 0 0 10%;
+.html-example {
+  width: 80%;
 }
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
