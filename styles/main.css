@@ -166,14 +166,12 @@ body {
 }
 .blog-items {
   display: grid;
-  width: 57%;
   margin: 2% 2% 2% 14%;
   justify-content: center;
   align-items: center;
-  border-radius: 12%;
+  border-radius: 8%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgb(255 255 255 / 0%);
   box-shadow: rgb(140 137 137 / 26%) -13px -12px 20px 0px;
   color: #464242;
   font-size: 1.5em;
@@ -181,7 +179,6 @@ body {
 }
 .blog-items .skill-base {
   display: flex;
-  font-size: 20px;
   justify-content: center;
 }
 .tech-list {
@@ -191,17 +188,17 @@ body {
 }
 
 .tech-list > * {
-  background-color: rgb(136 128 128 / 20%);
+  background-color: rgb(223 223 223);
   color: #fff;
   padding: 0.2em 0.8em;
   border-radius: 0.2em;
-  font-size: 80%;
-  margin: 5px;
+  margin: 11px;
 }
 .blog-content-detail {
   display: grid;
   gap: 10%;
   grid-template-columns: 1fr 1fr;
+  width: 70%;
 }
 
 /* Responsive Design: Media Query */
