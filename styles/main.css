@@ -64,7 +64,6 @@ body {
   font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
-  padding: 8px;
 }
 .header-right a:hover {
   background-color: #b4b0b0;
@@ -210,10 +209,9 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .header-right a {
-    padding: 8px;
+  /* .header-right a {
     font-size: 16px;
-  }
+  } */
   .content-main {
     display: flex;
     flex-direction: column;
