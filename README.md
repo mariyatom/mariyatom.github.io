@@ -16,13 +16,27 @@ Open the index.html file in your preferred browser to explore the blog.
 
  github link: https://mariyatom.github.io/
 
- Published in github using pages settings in the github.
+ Published on GitHub using Pages.
 
+ ### <ins>Blog Content</ins>
+
+ - **index.html** -  All files are linked to this file. The GitHub repository link is also added on this page, along with links to showcase both human skills and technical skills.
+  
+  #### **<ins>Technical Skills</ins>**
+
+ - **html-css.html** - Details about the best practices for using classes vs. IDs have been added to the html-css.html file.
+  
+  #### **<ins>Human Skills</ins>**
+
+  - **identity-values.html** - Discussed the topic of ethical decision-making, my strengths, how they support various situations, evaluated my limitations, and other related aspects.
+  
+  - **learning-plan.html** - The learning plan discusses my goals, a description of my strengths and limitations, the skills I aim to develop at Dev Academy, and how I manage my extra commitments.
+  
 ### Purpose
 
 Enjoy exploring my blog and witnessing the journey of my learning process!
 
-  ### References###
+  ### References
 
  - https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grids
  - Test for Grid: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Grid_skills
