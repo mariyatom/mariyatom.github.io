@@ -14,7 +14,7 @@ It is a fully responsive website, utilizing Flexbox, Grid, and Media Queries for
 Clone the repository to your local machine.Then, run `npx vite` in terminal.
 Open the index.html file in your preferred browser to explore the blog.
 
- github link: `https://mariyatom.github.io/`
+ github link: https://mariyatom.github.io/
 
  Published in github using pages settings in the github.
 
