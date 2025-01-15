@@ -100,7 +100,7 @@ body {
 .tech-one {
   font-size: 20px;
   color: black;
-  transition: width 0.3s ease; /* Smooth transition for width change */
+  transition: width 0.3s ease;
 }
 
 .tech-one:hover {
@@ -197,6 +197,29 @@ body {
   color: #464242;
   text-decoration: none;
 }
+#goUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color: #a4a2a2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#goUpBtn:hover {
+  background-color: #969393;
+}
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
   .blog-content {
@@ -209,9 +232,6 @@ body {
     display: flex;
     flex-direction: column;
   }
-  /* .header-right a {
-    font-size: 16px;
-  } */
   .content-main {
     display: flex;
     flex-direction: column;
