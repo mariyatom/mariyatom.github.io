@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Emotional-intelligence</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="blog-title">
+        <div id="header-placeholder"></div>
+      </div>
+
+      <div class="blog-content">
+        <div class="question-head">
+          <h2>Emotional-intelligence (EQ)</h2>
+          <h3>What is Emotional Intelligence?</h3>
+          <p>
+            Emotional intelligence (EQ) refers to a persons ability to perceive,
+            control, and influence emotions in oneself and others, which helps
+            in building strong relationships,Controlling one's own
+            emotions,making thoughtful decisions, and handling social
+            interactions effectively.
+          </p>
+          <h3>How is EQ Different from IQ?</h3>
+          <p>
+            EQ (Emotional Quotient) and IQ (Intelligence Quotient) are distinct
+            but complementary measures of human abilities. EQ focuses on
+            emotional competency, assessing one's ability to identify, control,
+            and use emotions effectively. It impacts motivation, empathy,
+            self-awareness, self-control, and relationships, playing a crucial
+            role in social interactions and personal well-being.
+          </p>
+          <p>
+            On the other hand, IQ emphasizes cognitive abilities, measuring
+            skills like processing information, reasoning, memory, and
+            knowledge. It influences academic performance, expertise, logic, and
+            critical thinking, and is central to problem-solving and
+            intellectual pursuits.
+          </p>
+          <h3>Why is Emotional Intelligence (EQ) Important?</h3>
+          <p>
+            Emotional intelligence plays a critical role in shaping our personal
+            and professional lives.Factors such as temperament, upbringing,
+            cultural influences, and trauma can also significantly impact a
+            person's EQ. It encourages us to put ourselves in other's shoes,
+            considering how they might feel in a given situation. This practice
+            of empathy fosters stronger connections and understanding in
+            relationships. People with high EQ communicate better, manage
+            stress, resolve conflicts, and collaborate effectively in teams. EQ
+            fosters leadership, empathy, and resilience, which are vital for
+            building trust, inspiring others, and navigating social dynamics in
+            the workplace and beyond.
+          </p>
+          <p>
+            EQ can be developed through practice and self-awareness. Pay
+            attention to your emotions, triggers, and reactions in different
+            situations. Developing empathy is also key; try to understand
+            others' perspectives and emotions. Another important thing is
+            self-awareness.Observing your emotions and reflecting on what
+            triggers them helps enhance this skill. Keeping a journal is an
+            excellent practice to gain deeper insights into your emotional
+            patterns.
+          </p>
+          <p>
+            Approaching situations with openness and withholding judgment is
+            another vital aspect of EQ. This mindset helps us better understand
+            others and consider diverse perspectives and ideas. Focusing on the
+            present moment, rather than dwelling on the past or worrying about
+            the future, is crucial for developing emotional awareness. This
+            mindfulness strengthens our ability to understand and manage our
+            feelings.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to load the header dynamically
+      fetch('./header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-placeholder').innerHTML = data
+        })
+        .catch((error) => console.error('Error loading header:', error))
+    </script>
+  </body>
+</html>
