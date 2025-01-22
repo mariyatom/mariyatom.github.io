@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0px 0px 27px;
 }
 
 .blog-detail {
@@ -117,8 +117,15 @@ body {
   width: 100%;
 }
 .question-head {
-  font-size: large;
   text-align: left;
+  background-color: rgb(245 240 240 / 20%);
+  padding: 5%;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: -8px 8px 7px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .screenshot-id-class {
   display: flex;
@@ -132,6 +139,12 @@ body {
 }
 .html-example {
   width: 80%;
+}
+.dom-img {
+  width: 50%;
+}
+.dom-example {
+  width: 70%;
 }
 .blog-items {
   display: grid;

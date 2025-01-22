@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Javascript-Dom</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="blog-title">
+        <div id="header-placeholder"></div>
+      </div>
+
+      <div class="blog-content">
+        <div class="question-head">
+          <h2>JavaScript, HTML, and CSS</h2>
+          <h3>JavaScript and its relationship to HTML and CSS</h3>
+          <p>
+            JavaScript is a powerful language that is lightweight and can
+            communicate with the browser.JavaScript programs should be stored in
+            and delivered as .js files. Javascript is different from
+            "Java".JavaScript, HTML, and CSS are the foundational technologies
+            for building websites.JavaScript is like the soul of the human
+            body.HTML and CSS are the body and the appearance. JS brings the
+            body to life!. Using the analogy of switchboard and wiring, we could
+            understand how they work together.
+          </p>
+          <p>
+            - <strong>HTML</strong> is the <strong>The Switchboard</strong>. It
+            is the physical structure where switches, buttons, and labels are
+            placed. It represents the content and structure of the webpage.The
+            buttons and bulb are like the physical components on a switchboard.
+          </p>
+          <p>
+            - <strong>CSS</strong> is the design of the Switchboard.It
+            determines its appearance. how the wires and switches look and makes
+            it visually appealing.Basically a user-friendly Switchboard design.
+          </p>
+          <p>
+            -<strong>JavaScript</strong> is doing the wiring functionality. It
+            enables the switches to perform actions like turning the light bulb
+            on or off. These wires connect buttons to the bulb, without it the
+            switchboard would just be a static display, making it functional.
+          </p>
+          <p>
+            Similarly,Remote and TV do too. The TV represents the structure like
+            HTML does. Design of the TV determines its style, that is our CSS.
+            Javascript is the Remote Control, which allows you to interact with
+            the TV.It connects the remote to the TV , enabling functionality
+            like turning it on, off, and adjusting the volume.
+          </p>
+          <p>
+            We can find elements by class name and by ID using . and #, respectively (just like with CSS), or by combining these methods, for example:
+
+If we wanted to find the first element with the 'w3schools-tutorial' id we would use: document.querySelector('#w3schools-tutorial')
+
+If we wanted to find the first <a> element with the 'w3schools-tutorial' id we would use: document.querySelector('a#w3schools-tutorial')
+See the difference? We've got an 'a' in front of the '#' to indicate that we only care about <a> elements.
+
+If we wanted a list of all elements with the 'dom' class we would use: document.querySelectorAll('.dom')
+          </p>
+          <div class="screenshot-id-class">
+            <div class="image-idclass">
+              <img
+                src="/assets/html-js1.png"
+                alt="Example for Html and js"
+                class="html-example"
+              />
+            </div>
+            <div class="image-idclass">
+              <img
+                src="/assets/css-js1.png"
+                alt="Example css for id and class"
+                class="html-example"
+              />
+            </div>
+            <div class="image-idclass">
+              <img
+                src="/assets/js-js1.png"
+                alt="Example css for id and class"
+                class="html-example"
+              />
+            </div>
+          </div>
+          <h3>
+            Control flow and loops using an example process from everyday life
+          </h3>
+          <h4>Using the Example of doing laundry</h4>
+          <h5>Control Flow:</h5>
+          <ol>
+            <li>
+              If the laundry basket is full, start the laundry. If not wait
+              until its full.
+            </li>
+            <li>
+              If the washing machine is empty and clean,put in the clothes. If
+              not, wait until the machine is ready.
+            </li>
+            <li>
+              If the machine is ready, add appropriate detergents and softeners
+              and then start the machine.
+            </li>
+            <li>
+              If the clothes are clean, move them to the dryer, if not wait
+              until it finishes.
+            </li>
+            <li>
+              If the dryer is done, fold the clothes. If not, wait for it to
+              finish.
+            </li>
+          </ol>
+          <h5>Loop:</h5>
+          <ul>
+            Checking the laundry load
+            <li>Start washing a load.</li>
+            <li>Repeat the process,If clothes are not clean</li>
+            <li>
+              Repeat the step for each load of laundry, Until all clothes are
+              washed and dried.
+            </li>
+          </ul>
+
+          <h3>DOM and an example of how you might interact with it</h3>
+          <p>
+            The <strong>Document Object Model <em>(DOM)</em></strong
+            >, generally abbreviated to DOM, is the way through which JavaScript
+            interacts with content within a website.The DOM is not a programming
+            language, but without it, the JavaScript language wouldn't have any
+            model or notion of web pages, HTML documents, SVG documents, and
+            their component parts.The DOM is not part of the JavaScript
+            language, but is instead a Web API used to build websites.
+            JavaScript can also be used in other contexts. For example, Node.js
+            runs JavaScript programs on a computer, but provides a different set
+            of APIs, and the DOM API is not a core part of the Node.js runtime.
+          </p>
+          <p>
+            What your browser displays is a web document.what you see is a
+            collision of HTML, CSS, and JavaScript working together to create
+            what gets shown.Digging one step deeper, under the covers, there is
+            a hierarchical structure that your browser uses to make sense of
+            everything going on.Browsers provide a document JavaScript object with a
+             large number of properties and methods to allow us to do precisely this. 
+             It's a "tree" of objects, with JS objects representing the head, body, title, paragraphs, etc. 
+             It's like a family tree, except each object, method, or property has only one parent.
+
+            At the head of this tree-the great-great-great-grandparent of all the 
+            rest, so to speak - the original ancestor - is the window object, and inside the window 
+            object is the document object, which represents our page. 
+          </p>
+          <div class="image-idclass dom-img">
+            <img src="/assets/dom.png" alt="Example dom" class="dom-example" />
+          </div>
+          <p>
+            Everything that makes up your DOM is more generically known as
+            nodes.These nodes can be elements (which shouldn't surprise you),
+            attributes, text content, comments, document-related stuff, and
+            various other things you simply never think about. That detail is
+            important to someone, but that "someone" shouldn't be you and me.
+            Almost always, the only kind of node we will care about is the
+            element kind because that is what we will be dealing with 99% of the
+            time. he document object does not simply represent a read-only
+            version of the HTML document. It is a two-way street where you can
+            read as well as manipulate your document at will
+          </p>
+          <h4>Example of Interacting with the DOM</h4>
+          <p>
+            Imagine you have a web page with a button that changes the
+            background color of a specific when clicked.
+          </p>
+          <div class="image-idclass dom-img">
+            <img
+              src="/assets/dom-html.png"
+              alt="Example dom"
+              class="dom-example"
+            />
+          </div>
+          <div class="image-idclass dom-img">
+            <img
+              src="/assets/js-dom.png"
+              alt="Example dom"
+              class="dom-example"
+            />
+          </div>
+
+          <h3>difference between accessing data from arrays and objects</h3>
+          <div>
+            <p>
+              An <strong>array</strong> is a special variable, which can hold
+              more than one value. An array can hold many values under a single
+              name, and you can access the values by referring to an index
+              number.Using an array literal is the easiest way to create a
+              JavaScript Array.The length property of an array returns the
+              length of an array. Syntax: const array_name = [item1, item2,
+              ...];
+            </p>
+            <p>const cars = ["Saab", "Volvo", "BMW"];</p>
+            <p>
+              <strong>Array indexes start with 0</strong>. [0] is the first element. [1] is the
+              second element.The JavaScript method toString() converts an array
+              to a string of (comma separated) array values.
+            </p>
+            <p>
+              const fruits = ["Banana", "Orange", "Apple", "Mango"];
+              document.getElementById("demo").innerHTML = fruits.toString();
+            </p>
+            <p>
+              With JavaScript, the full array can be accessed by referring to
+              the array name.
+            </p>
+            <p>
+              const cars = ["Saab", "Volvo", "BMW"];
+              document.getElementById("demo").innerHTML = cars;
+            </p>
+            <p>
+              The length property is always one more than the highest array
+              index.
+            </p>
+            <ul>
+              <li>
+                Arrays are ordered collections of data (indexed numerically).
+              </li>
+              <li>const fruits = ["apple", "banana", "cherry"];</li>
+              <li>console.log(fruits[0]); // Output: apple</li>
+              <li>console.log(fruits[1]); // Output: banana</li>
+              <li>Arrays are best when you need to store lists of similar data or when the order of items matters.</li>
+            </ul>
+          
+          
+          <p><strong>Objects</strong> data type containing unordered (but labeled) key/value pairs, stored within curly brackets {}. 
+            Each 'key' acts as a label for the corresponding 'value'.
+
+            Key/value pairs are referred to together as a 'property'.
+          </p> <p>
+            const popcorn = {
+              foodType: 'movie snack',
+              price: 4.99,
+              flavour: 'salt'
+            }</p>
+            Above, popcorn is the name of the object. foodType is a 'key', 'movie snack' is a 'value', 
+            and together this key/value pair is referred to as a 'property'.
+            
+            There are multiple ways to access or edit data from inside of an object. One common way to
+            retrieve data from an object is by using dot notation, where we say the name of the object, 
+            followed by a dot and then the key we would like to access. For example if we wanted to know the price of 
+            popcorn we could use popcorn.price, which provides the value of 4.99. While popcorn.flavour would provide the value of 'salt'.</p>
+       <ul>
+        <li>Objects are unordered collections of key-value pairs.</li>
+        <li><strong>Dot notation: object.key</strong></li>
+        <li><strong>Bracket notation: object["key"]</strong></li>
+        <li>const car = { brand: "Toyota", model: "Corolla", year: 2020 };</li>
+        <li>console.log(car.brand);      // Output: Toyota (dot notation)</li>
+        <li>console.log(car["model"]);   // Output: Corolla (bracket notation)</li>
+        <li> Objects are better for storing related data with descriptive keys (e.g., properties of an entity).</li>
+       </ul>
+          </div>
+      
+        <h3>What functions are and why they are helpful</h3>
+        <p>A function is a block of <strong>reusable code</strong> designed to perform a specific task. 
+          Functions take inputs (optional), process them, and return an output (optional).After declaring/writing a function,
+           you'll want to use that function! Do that by 'calling' it. 
+           You call a function by writing its name, followed by brackets (). functions do not run without calling them.
+          
+        </p>
+        <p>
+          Function keyword, followed by an identifier/name of the function, then brackets which optionally contain parameters separated by commas, then curly brackets inside of which is the statement(s) that define the function.
+          A piece of code typically used to execute a task, written so that it can be called upon multiple times if needed.
+        </p>
+        <p>Features of functions are:-</p>
+        <ul>
+          <li>
+            <strong>Reusability:</strong> It allow us to reuse the same code multiple times. It helps to avoid code duplication.
+            That means, It overcome the repetition problem.
+          </li>
+          <li>Avoid Repetition (DRY Principle)</li>
+          <li>
+            Parameters and Return Values : you can pass inputs into functions and receive outputs, It makes them flexible and powerful.
+
+          </li>
+          <li>
+            Maintability: It's easy to debug and understand. 
+          </li>
+        </ul>
+        </div>
+      </div>
+      </div>
+    <script>
+      // Function to load the header dynamically
+      fetch('./header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-placeholder').innerHTML = data
+        })
+        .catch((error) => console.error('Error loading header:', error))
+    </script>
+  </body>
+</html>
