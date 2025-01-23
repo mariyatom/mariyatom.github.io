@@ -18,6 +18,11 @@
           <div class="blog-heading">
             <h1><em>MTs Notes</em></h1>
           </div>
+          <div>
+            <button id="dark-mode-toggle" class="round-button">
+              <i id="toggle-icon" class="fas fa-eye"></i>
+            </button>
+          </div>
           <div class="header-right">
             <a class="active" href="index.html">Home</a>
             <a href="/blog/te-houtaewa-template.html">Te Houtaewa</a>
@@ -100,5 +105,22 @@
         </div>
       </div>
     </div>
+    <script>
+      const toggleButton = document.getElementById('dark-mode-toggle')
+      const headerDiv = document.querySelector('.blog-title')
+      const mainContainerDiv = document.querySelector('.main-container')
+
+      toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode')
+        headerDiv.classList.toggle('dark-mode')
+        mainContainerDiv.classList.toggle('dark-mode')
+
+        if (document.body.classList.contains('dark-mode')) {
+          toggleIcon.classList.replace('fa-eye', 'fa-eye-slash')
+        } else {
+          toggleIcon.classList.replace('fa-eye-slash', 'fa-eye')
+        }
+      })
+    </script>
   </body>
 </html>
