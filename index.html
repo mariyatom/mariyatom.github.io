@@ -18,14 +18,14 @@
           <div class="blog-heading">
             <h1><em>MTs Notes</em></h1>
           </div>
-          <div>
-            <button id="dark-mode-toggle" class="round-button">
-              <i id="toggle-icon" class="fas fa-eye"></i>
-            </button>
-          </div>
+
           <div class="header-right">
-            <a class="active" href="index.html">Home</a>
-            <a href="/blog/te-houtaewa-template.html">Te Houtaewa</a>
+            <a class="active" href="index.html"><i class="fas fa-home"></i></a>
+            <div>
+              <button id="dark-mode-toggle" class="round-button">
+                <i id="toggle-icon" class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="/blog/javascript-dom.html" class="tech-one"
-                    >JS Fundamentals</a
+                    >JS-DOM</a
                   >
                 </li>
               </ul>
@@ -116,9 +116,9 @@
         mainContainerDiv.classList.toggle('dark-mode')
 
         if (document.body.classList.contains('dark-mode')) {
-          toggleIcon.classList.replace('fa-eye', 'fa-eye-slash')
+          toggleButton.classList.replace('fa-eye', 'fa-eye-slash')
         } else {
-          toggleIcon.classList.replace('fa-eye-slash', 'fa-eye')
+          toggleButton.classList.replace('fa-eye-slash', 'fa-eye')
         }
       })
     </script>
