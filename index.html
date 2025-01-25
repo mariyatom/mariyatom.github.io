@@ -50,50 +50,55 @@
             </div>
           </div>
           <div class="blog-content-detail">
-            <div class="blog-items">
-              <div class="skill-base">Technical Skill</div>
-              <ul class="tech-list">
-                <li>
-                  <a href="/blog/html-css.html" class="tech-one"
-                    >CSS Concepts</a
-                  >
-                </li>
-                <li>
-                  <a href="/blog/javascript-dom.html" class="tech-one"
-                    >JS-DOM</a
-                  >
-                </li>
-              </ul>
+            <button class="accordion"><u class="sub-head">Technical Skill</u></button>
+            <div class="panel">
+              <p>
+                <ul class="tech-list">
+                  <li>
+                    <a href="/blog/html-css.html" class="tech-one"
+                      >CSS Concepts</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/blog/javascript-dom.html" class="tech-one"
+                      >JS-DOM</a
+                    >
+                  </li>
+                </ul>
+              </p>
             </div>
-            <div class="blog-items">
-              <div class="skill-base">Human Skill</div>
-              <ul class="tech-list">
-                <li>
-                  <a href="/blog/identity-values.html" class="tech-one"
-                    >Identity Values</a
-                  >
-                </li>
-                <li>
-                  <a href="/blog/learning-plan.html" class="tech-one"
-                    >Learning Plan</a
-                  >
-                </li>
-                <li>
-                  <a href="/blog/emotional-intelligence.html" class="tech-one"
-                    >Emotional-intelligence</a
-                  >
-                </li>
-                <li>
-                  <a href="/blog/neuroplasticity.html" class="tech-one"
-                    >Neuroplasticity</a
-                  >
-                </li>
-                <li>
-                  <a href="/blog/te-whare-tapa-wha.html" class="tech-one"
-                    >Te Whare Tapa Whā</a
-                  >
-                </li>
-              </ul>
+
+            <button class="accordion"><u class="sub-head">Human Skill</u></button>
+            <div class="panel">
+             
+                <ul class="tech-list">
+                  <li>
+                    <a href="/blog/identity-values.html" class="tech-one"
+                      >Identity Values</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/blog/learning-plan.html" class="tech-one"
+                      >Learning Plan</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/blog/emotional-intelligence.html" class="tech-one"
+                      >Emotional-intelligence</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/blog/neuroplasticity.html" class="tech-one"
+                      >Neuroplasticity</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/blog/te-whare-tapa-wha.html" class="tech-one"
+                      >Te Whare Tapa Whā</a
+                    >
+                  </li>
+                </ul>
+              
             </div>
           </div>
         </div>
@@ -120,6 +125,7 @@
       </div>
     </div>
     <script>
+      // Dark mode toggle button
       const toggleButton = document.getElementById('dark-mode-toggle')
       const headerDiv = document.querySelector('.blog-title')
       const mainContainerDiv = document.querySelector('.main-container')
@@ -135,6 +141,22 @@
           toggleButton.classList.replace('fa-eye-slash', 'fa-eye')
         }
       })
+
+      // Toggle accordion
+      var acc = document.getElementsByClassName('accordion')
+      var i
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active')
+          var panel = this.nextElementSibling
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px'
+          }
+        })
+      }
     </script>
   </body>
 </html>
