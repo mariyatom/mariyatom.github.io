@@ -1,0 +1,52 @@
+﻿<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <audio id="cafeSound" controls autoplay loop>
+      <source
+        src="/blog/javascript-cafe/assets/cafe-audio.mp3"
+        type="audio/mpeg"
+      />
+      <embed
+        src="/blog/javascript-cafe/assets/cafe-audio.mp3"
+        autoplay="autoplay"
+        loop="loop"
+      />
+    </audio>
+
+    <h1>JavaScript Café</h1>
+    <div class="container">
+      <p id="whiteCoffee"></p>
+      <p id="blackCoffee"></p>
+      <p id="sandwich"></p>
+      <p id="muffin"></p>
+      <p id="eggs"></p>
+      <p id="cash"></p>
+      <p id="customerMoney">Customer Money: $0.00</p>
+
+      <p id="customerOrder">customer order:</p>
+    </div>
+    <button class="button" id="customerButton">generate customer</button>
+    <button class="button" id="fillOrder">fill order</button>
+
+    <div id="transactionHistory"></div>
+
+    <div id="refundSection">
+      <h3>Refund Management</h3>
+      <div id="refundContainer"></div>
+      <button id="refundButton">Refund</button>
+    </div>
+
+    <script src="cafe.js"></script>
+  </body>
+</html>
