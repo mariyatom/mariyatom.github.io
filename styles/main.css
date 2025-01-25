@@ -342,6 +342,22 @@ header drop-down
 .sub-head {
   color: #b3856b;
 }
+.wellbeing-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: #f3e9dc;
+  margin: 25px;
+}
+.wellbeing-table h1 {
+  text-align: center;
+}
+.wellbeing-table td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
   .blog-content {
