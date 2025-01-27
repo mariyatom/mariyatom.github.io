@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Problem-solving</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="blog-title">
+        <div id="header-placeholder"></div>
+      </div>
+
+      <div class="blog-content">
+        <div class="question-head">
+          <h2>Problem Solving</h2>
+          <h3>
+            <u class="sub-head">A Time I Was Blocked on a Simple Problem</u>
+          </h3>
+          <p>
+            I was blocked on the task of Capitalizing the first letter of every
+            word. While using the in-built split method, I mistakenly added
+            quotes with out space. There must obviously be a space in front of
+            every word.
+          </p>
+          <p>problem-solving techniques:</p>
+          <ul>
+            <li>Debugging with console.log</li>
+            <li>
+              I explained the problem aloud as if I were teaching someone else.
+              I only do this in my own space. If I'am with others, I would write
+              it down on a paper instead. it helped me to clarify and refine my
+              own thoughts.
+            </li>
+            <li>
+              Either I stepped away from the problem for 15 minutes or I moved
+              to next task and then came back to it later.
+            </li>
+          </ul>
+          <p>How I Felt:</p>
+          <p>
+            I felt embarrassed and frustrated at first. I kept wondering why I
+            was stuck on such basic things. I was stuck longer than I expected.
+            However, Once I figured it out, it boosted my confidence and
+            satisfaction.
+          </p>
+          <p>What I learned:</p>
+          <p>
+            I realized the importance of debugging techniques. There's no need
+            to get frustrated.It's best to Take a break and come back.
+          </p>
+          <h3>
+            <u class="sub-head">A Time I Elegantly Solved a Problem</u>
+          </h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button id="goUpBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Function to load the header dynamically
+      fetch('./header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-placeholder').innerHTML = data
+        })
+        .catch((error) => console.error('Error loading header:', error))
+
+      // Get the button
+      const goUpBtn = document.getElementById('goUpBtn')
+
+      // Show the button when scrolled down 100px from the top
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          goUpBtn.style.display = 'block'
+        } else {
+          goUpBtn.style.display = 'none'
+        }
+      }
+
+      // Scroll to the top when the button is clicked
+      goUpBtn.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
+      })
+    </script>
+  </body>
+</html>
