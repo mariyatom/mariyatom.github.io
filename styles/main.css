@@ -278,11 +278,9 @@ header drop-down
   margin: 11px;
 }
 .blog-content-detail {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 6%;
-  width: 65%;
+  width: 39%;
+  margin-left: 20%;
 }
 .footer {
   position: fixed;
@@ -387,13 +385,27 @@ th {
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
+  padding: 0px 40px;
+  background-color: #ede2d4a8;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+.tech-detail-head,
+.hum-detail-head {
+  color: #9e5226;
+  animation: smooth-blink 1.5s infinite;
+}
 
+@keyframes smooth-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 /* Responsive Design: Media Query */
 @media only screen and (max-width: 650px) {
   .blog-content {
