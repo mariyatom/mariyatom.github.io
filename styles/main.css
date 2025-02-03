@@ -125,6 +125,8 @@ header drop-down
   list-style: none;
   padding: 5px 0;
   margin: 0;
+
+  min-width: 180px;
   width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -138,7 +140,7 @@ header drop-down
 .header-right .dropdown li a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .header-right .dropdown li a:hover {
@@ -165,10 +167,10 @@ header drop-down
   float: left;
   color: black;
   text-align: left;
-  padding: 12px;
+  padding: 8px;
   text-decoration: none;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 22px;
   border-radius: 4px;
 }
 .header-right a:hover {
@@ -191,7 +193,7 @@ header drop-down
 }
 
 .blog-detail {
-  padding: 2% 0 1% 4%;
+  padding: 0 0 1% 4%;
 }
 .content-main-htmlcss p {
   margin-bottom: 1em;
@@ -223,6 +225,7 @@ header drop-down
 }
 .question-head {
   text-align: left;
+  line-height: 28px;
   background-color: #f2f2f2;
   padding: 1% 5%;
   border-radius: 8px;
@@ -313,8 +316,8 @@ header drop-down
 #goUpBtn {
   display: none;
   position: fixed;
-  bottom: 13%;
-  right: 9%;
+  bottom: 7%;
+  right: 5%;
   z-index: 99;
   width: 50px;
   height: 50px;
