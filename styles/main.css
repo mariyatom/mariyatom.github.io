@@ -66,7 +66,7 @@ body.dark-mode .round-button {
   display: flex;
   flex-direction: column;
   background-color: #e1e0e0;
-  /* background-image: url(/assets/vector-grey-abstract.jpg); */
+  background-image: url(/assets/mountain.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,6 +186,7 @@ header drop-down
 }
 
 .blog-content {
+  background-color: rgb(255 255 255 / 80%);
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -286,7 +287,7 @@ header drop-down
   margin-left: 20%;
 }
 .footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
