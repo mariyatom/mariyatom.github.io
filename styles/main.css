@@ -436,4 +436,13 @@ th {
   .footer {
     padding: 1%;
   }
+  .panel {
+    padding: 0px 17px;
+  }
+  .accordion {
+    font-size: 12px;
+  }
+  .blog-content-detail {
+    width: 58%;
+  }
 }
